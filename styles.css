@@ -17,20 +17,23 @@ body {
 }
 
 .form {
-	width: 500px;
+	width: 400px;
 	height: 600px;
 	margin: auto;
 	border: 2px solid #000;
-}
-
-.form {
 	display: flex;
 	flex-direction: column;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border: 1px solid #ffffff4d;
+	box-shadow: 0 5px 7px #00000044;
 }
 
 .form__title {
 	font-size: 30px;
-	padding: 30px;
+	padding: 30px 40px;
 }
 
 span {
@@ -40,8 +43,45 @@ span {
 
 .form__username,
 .form_password {
-	border: 1px solid #000;
+	width: 80%;
 	border-radius: 40px;
+	padding: 10px 15px;
+	background-color: #b196c150;
+	margin: 5px 40px;
+}
+
+.form__label {
+	font-size: 20px;
+}
+
+.form__input {
+	border: 1px solid #000000;
+	width: 65%;
+	outline: none;
+	border-radius: 20px;
+	background-color: transparent;
+	color: #f0ffff;
 	padding: 5px;
-	margin: 5px;
+}
+
+.form__input::placeholder {
+	color: #f0ffff;
+}
+.form__input .form__input::placeholder:focus {
+	background-color: transparent;
+}
+
+.form__input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #0b0b2c inset !important;
+	-webkit-text-fill-color: #f0ffff !important;
+}
+
+.form__input:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0 30px #0b0b2c inset !important;
+	-webkit-text-fill-color: #f0ffff !important;
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+.form__input:focus::placeholder {
+	color: #f0ffff;
 }
