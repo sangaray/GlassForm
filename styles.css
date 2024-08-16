@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+/* prettier-ignore */
+body, form, legend, input, label, fieldset, button, p, h2, span {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("./images/Fondo1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	font-family: sans-serif;
+}
+
+.form {
+	width: 500px;
+	height: 600px;
+	margin: auto;
+	border: 2px solid #000;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form__title {
+	font-size: 30px;
+	padding: 30px;
+}
+
+span {
+	text-decoration: underline 6px;
+	text-underline-offset: 6px;
+}
+
+.form__username,
+.form_password {
+	border: 1px solid #000;
+	border-radius: 40px;
+	padding: 5px;
+	margin: 5px;
+}
