@@ -85,3 +85,12 @@ span {
 .form__input:focus::placeholder {
 	color: #f0ffff;
 }
+
+.form__button-login {
+	background-color: #fff;
+	width: 100px;
+	border-radius: 20px;
+	padding: 10px 20px;
+	margin: 10px 40px;
+	font-size: 20px;
+}
